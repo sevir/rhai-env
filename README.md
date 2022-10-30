@@ -1,6 +1,6 @@
-# rhai-env
+# rhai-{{module}}
 
-Rhai Env is a plugin extension for manipulating env variables inside Rhai lang
+Rhai {{module | capitalize}} is a plugin extension for {{description}} inside Rhai lang
 
 ## Usage
 
@@ -8,13 +8,13 @@ Rhai Env is a plugin extension for manipulating env variables inside Rhai lang
 
 ```toml
 [dependencies]
-rhai-env = "0.1"
+rhai-{{module}} = "0.1"
 ```
 
 ### [Rhai] script
 
 ```js
-let variable = get_env("ENV_VARIABLE")
+let variable = function_name("ENV_VARIABLE")
 
-set_env("ENV_VARIABLE", variable)
+function_name("ENV_VARIABLE", variable)
 ```
